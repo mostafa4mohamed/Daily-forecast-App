@@ -46,7 +46,16 @@ class MainViewModel @Inject constructor(
                     longitude
                 )
             }.onFailure { th ->
-                _getDailyForecastStateFlow.value = NetworkState.Error(msg = th.message)
+                try {
+                    val data = invokeFromRoom(cityId)
+                    if (data?.list.isNullOrEmpty())
+                        _getDailyForecastStateFlow.value = NetworkState.Error(msg = th.message)
+                    else
+                        _getDailyForecastStateFlow.value = NetworkState.Result(data, false)
+
+                } catch (_: Exception) {
+                    _getDailyForecastStateFlow.value = NetworkState.Error(msg = th.message)
+                }
             }.onSuccess {
 
                 val isOnline: Boolean
