@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DailyForecastApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/teal_200</item>
+    </style>
+
+    <style name="Theme.DailyForecastApplication" parent="Base.Theme.DailyForecastApplication" />
+    <style name="CustomTextViewThemeRegular" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="fontFamily">@font/my_din_next_lt_regular</item>
+    </style>
+
+    <style name="CustomFieldCardView" parent="">
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">0.5dp</item>
+        <item name="strokeWidth">@dimen/_1sdp</item>
+        <item name="strokeColor">@color/gray_2</item>
+    </style>
+
+</resources>

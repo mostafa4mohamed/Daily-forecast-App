@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_7sdp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:padding="@dimen/_4sdp"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_date_key"
+                style="@style/CustomTextViewThemeRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/date"
+                android:textColor="@color/teal_200"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/CustomTextViewThemeRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_date_key"
+                app:layout_constraintTop_toTopOf="@id/tv_date_key"
+                tools:text="@string/date" />
+
+
+            <TextView
+                android:id="@+id/tv_temp_key"
+                style="@style/CustomTextViewThemeRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/temp"
+                android:textColor="@color/teal_200"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_date_key" />
+
+            <TextView
+                android:id="@+id/tv_temp"
+                style="@style/CustomTextViewThemeRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_temp_key"
+                app:layout_constraintTop_toTopOf="@id/tv_temp_key"
+                tools:text="@string/name" />
+
+
+            <TextView
+                android:id="@+id/tv_humidity_key"
+                style="@style/CustomTextViewThemeRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/humidity"
+                android:textColor="@color/teal_200"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_temp_key" />
+
+            <TextView
+                android:id="@+id/tv_humidity"
+                style="@style/CustomTextViewThemeRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_humidity_key"
+                app:layout_constraintTop_toTopOf="@id/tv_humidity_key"
+                tools:text="@string/name" />
+
+            <TextView
+                android:id="@+id/tv_description_key"
+                style="@style/CustomTextViewThemeRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/description"
+                android:textColor="@color/teal_200"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_humidity_key" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/CustomTextViewThemeRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_description_key"
+                app:layout_constraintTop_toTopOf="@id/tv_description_key"
+                tools:text="@string/name" />
+
+            <TextView
+                android:id="@+id/tv_wind_speed_key"
+                style="@style/CustomTextViewThemeRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/wind_speed"
+                android:textColor="@color/teal_200"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_description_key" />
+
+            <TextView
+                android:id="@+id/tv_wind_speed"
+                style="@style/CustomTextViewThemeRegular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_wind_speed_key"
+                app:layout_constraintTop_toTopOf="@id/tv_wind_speed_key"
+                tools:text="@string/name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
