@@ -17,10 +17,10 @@ The **Daily Forecast App** provides users with real-time weather updates, includ
 
 ## Screenshots
 
-![init view Screenshot](screenshots/init view.jpg)
-![select your city Screenshot](screenshots/select your city.jpg)
-![online mode Screenshot](screenshots/online mode.jpg)
-![offline mode Screenshot](screenshots/offlin mode.jpg)
+- [init view Screenshot](https://github.com/mostafa4mohamed/Daily-forecast-App/blob/master/screenshots/init%20view.jpg)
+- [select your city Screenshot](https://github.com/mostafa4mohamed/Daily-forecast-App/blob/master/screenshots/select%20your%20city.jpg)
+- [online mode Screenshot](https://github.com/mostafa4mohamed/Daily-forecast-App/blob/master/screenshots/online%20mode.jpg)
+- [offline mode Screenshot](https://github.com/mostafa4mohamed/Daily-forecast-App/blob/master/screenshots/offlin%20mode.jpg)
 
 ## Installation
 
