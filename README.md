@@ -17,6 +17,10 @@ The **Daily Forecast App** provides users with real-time weather updates, includ
 
 ## Screenshots
 
+![init view Screenshot](screenshots/init view.jpg)
+![select your city Screenshot](screenshots/select your city.jpg)
+![online mode Screenshot](screenshots/online mode.jpg)
+![offline mode Screenshot](screenshots/offlin mode.jpg)
 
 ## Installation
 
@@ -30,8 +34,9 @@ The project is modularized into three modules: app, data, and domain.
 
 ## Technologies
 
--Kotlin: Programming language used.
--Room: Used for caching data in offline mode.
--Coroutines: Used to handle asynchronous tasks.
--Hilt: Implemented for dependency injection.
--Retrofit: Used to fetch data from the server.
+- Kotlin: Programming language used.
+- Room: Used for caching data in offline mode.
+- Coroutines: Used to handle asynchronous tasks.
+- Hilt: Implemented for dependency injection.
+- Retrofit: Used to fetch data from the server.
+- JUnit 4: to implement Unit tests.
